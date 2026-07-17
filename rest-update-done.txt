@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Server: gunicorn
+Date: Fri, 17 Jul 2026 06:46:22 GMT
+Connection: close
+Content-Type: application/json
+Content-Length: 131
+
+{"address":"456 Oak Ave","date_joined":"2026-07-17","email":"jane@example.com","id":1,"name":"Jane Doe","phone_number":"555-5678"}
