@@ -1,0 +1,17 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    52  100    52    0     0  20456      0 --:--:-- --:--:-- --:--:-- 26000
+HTTP/1.1 200 OK
+Server: gunicorn
+Date: Fri, 17 Jul 2026 10:14:20 GMT
+Connection: close
+Content-Type: application/json
+Content-Length: 52
+Access-Control-Allow-Origin: *
+Permissions-Policy: browsing-topics=()
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'; object-src 'none'
+Referrer-Policy: strict-origin-when-cross-origin
+
+{"name":"Account REST API Service","version":"1.0"}

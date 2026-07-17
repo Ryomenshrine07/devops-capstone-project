@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.14, pytest-9.1.1, pluggy-1.6.0 -- /usr/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /home/project/devops-capstone-project
+plugins: langsmith-0.3.45, Faker-40.31.0, anyio-4.11.0
+collecting ... collected 12 items
+
+tests/test_routes.py::TestAccountService::test_account_not_found PASSED  [  8%]
+tests/test_routes.py::TestAccountService::test_bad_request PASSED        [ 16%]
+tests/test_routes.py::TestAccountService::test_cors_security PASSED      [ 25%]
+tests/test_routes.py::TestAccountService::test_create_account PASSED     [ 33%]
+tests/test_routes.py::TestAccountService::test_delete_account PASSED     [ 41%]
+tests/test_routes.py::TestAccountService::test_health PASSED             [ 50%]
+tests/test_routes.py::TestAccountService::test_index PASSED              [ 58%]
+tests/test_routes.py::TestAccountService::test_list_accounts PASSED      [ 66%]
+tests/test_routes.py::TestAccountService::test_read_account PASSED       [ 75%]
+tests/test_routes.py::TestAccountService::test_security_headers PASSED   [ 83%]
+tests/test_routes.py::TestAccountService::test_unsupported_media_type PASSED [ 91%]
+tests/test_routes.py::TestAccountService::test_update_account PASSED     [100%]
+
+=============================== warnings summary ===============================
+tests/test_routes.py::TestAccountService::test_account_not_found
+  /home/project/devops-capstone-project/service/models.py:76: LegacyAPIWarning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    return cls.query.get(by_id)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 12 passed, 1 warning in 0.75s =========================
